@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Home</title>
+    <style>
+        
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-gap: 20px;
+            justify-content: center;
+            align-items: start;
+        }
+    </style>
+    <span id="greeting"></span>
+</head>
+<body>
+    <a href="#main">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li class="current-page"><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="pets.html">Pets</a></li>
+            <li><a href="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+    <main id="main"> 
+
+        <section class="grid-container">
+            <div>
+                <h1 id="typing-effect"></h1>
+                <h1>Travel</h1>
+                <div>
+                    <p> I love to travel, and some of my favorite places to visit are: </p>
+                    
+                    <h2>Ocho Rios, Jamaica</h2>
+                    <p>Ocho Rios holds a special place in my heart, primarily due to its captivating beauty and vibrant atmosphere. The tropical weather is absolutely enchanting, providing the perfect backdrop for unforgettable experiences.</p>
+                    <p>Reasons I love Ocho Rios:</p>
+                    <ul>
+                        <li>The weather - Perfect for my love of sunshine and warmth</li>
+                        <li>Snorkeling - A favorite water activity that allows me to explore marine life</li>
+                        <li>Scuba diving - An exhilarating adventure into the depths of the ocean</li>
+                    </ul>
+                </div>
+                
+                <h2>New York City</h2>
+                <p>New York City, with its towering skyscrapers and bustling streets, has a unique charm that always draws me in.</p>
+                <p>Reasons I like New York City:</p>
+                <ul>
+                    <li>The tall buildings - A fascination with architectural marvels</li>
+                    <li>The lights - The dazzling city lights create a magical ambiance</li>
+                    <li>The activities - A wide array of activities that cater to my diverse interests</li>
+                </ul>
+                
+                <h2>Yellowstone National Park</h2>
+                <p>Yellowstone National Park is a nature lover's paradise, and I'm captivated by its breathtaking scenery. The park's diverse landscapes, from majestic mountains to bubbling geysers, create a truly immersive experience.</p>
+                <p>Reasons I love Yellowstone National Park:</p>
+                <ul>
+                    <li>The scenery - Breathtaking views of mountains, geysers, and more</li>
+                    <li>The animals - Wildlife encounters with creatures in their natural habitat</li>
+                    <li>The water - Serene lakes and flowing rivers, perfect for my love of water</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="grid-container">
+            <div>
+                <h1>Favorite Recipes</h1>
+                <div>
+                    <p>When it comes to cooking, these are some of my favorite recipes:</p>
+                    
+                    <h2>Coconut Shrimp and Rice</h2>
+                    <p>Indulge in the tropical flavors of Coconut Shrimp and Rice, where succulent shrimp meets coconut-infused rice for a delightful culinary experience.</p>
+                    
+                    <h2>Escovitch Fish</h2>
+                    <p>Delight your taste buds with the vibrant and zesty flavors of Jamaican Escovitch Fish. Crispy fried fish topped with a pickled vegetable medley creates a symphony of flavors and textures on your plate.</p>
+                    
+                    <h2>Jerk Chicken</h2>
+                    <p>Experience the bold and spicy flavors of Jerk Chicken, a cherished Jamaican dish passed down from my mother. It brings a taste of Jamaica to your table.</p>
+                    
+                    <h2>Ackee and Saltfish</h2>
+                    <p>Indulge in the authentic flavors of Jamaica with Ackee and Saltfish, a delightful breakfast dish combining ackee fruit with salted codfish.</p>
+                </div>
+            </div>
+            
+            <div>
+                <h1>My Pets</h1>
+                <div>
+                    <p>Meet my adorable pets:</p>
+                    
+                    <h2>Cody - The Dog</h2>
+                    <p>Cody is a loyal and playful dog who brings joy to every moment with his boundless energy and affectionate nature.</p>
+                    
+                    <h2>Peddie - The Golden Retriever</h2>
+                    <p>Peddie, the gentle Golden Retriever, is not just a pet but a beloved family member. His friendly demeanor and intelligence make him a treasure.</p>
+                    
+                    <h2>MiuMiu - The Cat</h2>
+                    <p>MiuMiu, the charming cat, adds a touch of feline grace to our home. With her independent spirit and playful antics, she's a delightful companion.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Jelani Hastings</p>
+    </footer>
+    <button id="backToTop" onclick="scrollToTop()" style="display:none;">Back to Top</button>
+    <script>
+      
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+    
+       
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    <script src="js/style.js"></script>
+    <script src="js/unique.js"></script>
+</body>
+</html>

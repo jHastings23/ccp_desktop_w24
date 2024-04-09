@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/html5reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Pets</title>
+</head>
+<body>
+    <a href="#main">Skip to Main Content</a>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li class="current-page"><a href="pets.html">Pets</a></li>
+            <li><a href ="travel.html">Travel</a></li>
+        </ul>
+    </nav>
+    <h1>Pets</h1>
+    <main id="main" class="grid-container"> 
+        
+        <div>
+            <div>
+                <h2>Cody the Dog</h2>
+                <img src="images/cody.jpg" width="400" alt="Picture of Cody the Dog">
+                <p>Cody, the lively and affectionate dog, is a bundle of joy in every sense. With a glossy coat of fur and soulful eyes, he captivates everyone around him. Cody is an outdoors enthusiast; he thrives on long walks, frolicking in the grass, and chasing after his favorite squeaky toys. His boundless energy and wagging tail are infectious, creating an atmosphere of pure happiness. Cody has a palate for tasty treats, especially those that involve peanut butter. On the flip side, he is not a fan of thunderstorms, often seeking comfort from his favorite cozy spot during stormy weather. Cody's playful nature and loyalty make him not just a pet but an integral part of the family, bringing warmth and joy to every moment.</p>
+                <p>Cody has excelled in obedience training, mastering commands like sit, stay, and fetch. His intelligence and eagerness to please make every training session a delightful experience.</p>
+            </div>
+
+            <div class="cody-photos">
+                <h3>Photo Gallery</h3>
+                <img src="images/cody_fireplace.jpg" width="200" alt="Picture of Cody at fireplace">
+                <img src="images/cody_play.jpg" width="200" alt="Picture of Cody playing">
+                <img src="images/cody_sea.jpg" width="200" alt="Picture of cody at the sea">
+            </div>
+           
+            <h3>Likes</h3>
+            <ul>
+                <li>Belly rubs</li>
+                <li>Playing</li>
+                <li>Sleeping by the fireplace</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Peddie the golden retriever</h2>
+            <img src="images/peddie.jpg" width="400" alt="picture of peddie the dog">
+            <p>Peddie, our adventurous and spirited canine companion, brings a lively spirit to our home. With a fluffy coat and a perpetually wagging tail, Peddie is always ready for exciting escapades. He adores outdoor activities, from chasing after flying discs in the park to exploring nature trails with boundless enthusiasm. Peddie's friendly demeanor and charming antics make every day brighter, and his loyalty to the family is unwavering. Whether cuddling up on the couch or joining in on family outings, Peddie is a cherished member of our household, filling our lives with joy and laughter.</p>
+            
+            <h3>Photo Gallery</h3>
+            <img src="images/peddie_play.jpg" width="200" alt="picture of peddie playing">
+            <img src="images/peddie_smile.jpg" width="200" alt="picture of peddie smiling">
+            <img src="images/peddie_swim.jpg" width="200" alt="picture of peddie swimming">
+            
+            <h3>Likes</h3>
+            <ul>
+                <li>Swimming</li>
+                <li>Smiling</li>
+                <li>playing</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Miumiu the cat</h2>
+            <img src="images/miumiu.jpg" width="400" alt="a picture of miumiu the cat">
+            <p>MiuMiu, our elegant and graceful feline companion, adds a touch of sophistication to our home. With a coat as soft as silk and mesmerizing green eyes, MiuMiu carries an air of regal charm. She gracefully moves through our living space, finding the sunniest spots to bask in the warmth of natural light. MiuMiu is a connoisseur of relaxation, often perched on the comfiest cushions and engaging in meticulous grooming sessions. Despite her poised demeanor, MiuMiu has a playful side, batting at feather toys with precision and executing graceful leaps that showcase her agility. MiuMiu's serene presence brings a sense of tranquility to our household, making her an adored member of our family.</p>
+
+            <h3>Photo Gallery</h3>
+            <img src="images/miumiu_in_the_bag.jpeg" width="200" alt="picture of miumiu the cat in a suitcase">
+            <img src="images/miumiu_sleeping.jpeg" width="200" alt="picture of miumiu the cat sleeping">
+            <img src="images/miumiu_under_sunshine.jpeg" width="200" alt="picture of miumiu the cat by a window">
+
+            <h3>Likes</h3>
+            <ul>
+                <li>Sleeping</li>
+                <li>Climbing in things</li>
+                <li>Laying by the window</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>Jelani Hastings</footer>
+    <button id="backToTop" onclick="scrollToTop()" style="display:none;">Back to Top</button>
+    <script>
+     
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("backToTop").style.display = "block";
+            } else {
+                document.getElementById("backToTop").style.display = "none";
+            }
+        };
+    
+       
+        function scrollToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+    
+</body>
+</html>
